@@ -1,5 +1,6 @@
 ---
 import type { Book } from "../types";
+import * as tools from '../tools.ts';
 
 const response = await fetch(
 	"https://edwardtanguay.vercel.app/share/books.json"
@@ -19,7 +20,7 @@ if (response.ok) {
 		books.map((book: Book) => {
 			return (
 				<div class="w-[30rem] bg-white p-3">
-					<div class="font-semibold">{book.title}</div>
+					<div class="font-semibold">{tools.uppercaseIt(book.title)}</div>
 					<a href={book.buyurl} target="_blank">
 						<img
 							class="w-[6rem] mt-3 mr-3 float-left border border-gray-300"
