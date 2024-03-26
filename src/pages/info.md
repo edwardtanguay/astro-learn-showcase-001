@@ -2,7 +2,8 @@
 layout: ../layouts/page.astro
 ---
 
-## Info Page (created with Markdown)
+### Note
+- This page was created with markdown.
 
 ### First Section
 
@@ -14,3 +15,4 @@ layout: ../layouts/page.astro
 -   a sub issue
 -   more details
 -   and more
+

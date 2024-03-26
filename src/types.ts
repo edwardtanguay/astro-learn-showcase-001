@@ -1,6 +1,7 @@
 export type Book = {
 	id: number;
-	idCode: string;
+	idcode: string;
 	title: string;
 	description: string;
+	buyurl: string;
 }

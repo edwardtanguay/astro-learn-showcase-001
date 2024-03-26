@@ -14,12 +14,19 @@ if (response.ok) {
 }
 ---
 
-<section>
+<section class="flex flex-wrap gap-3">
 	{
 		books.map((book: Book) => {
 			return (
-				<div>
-					<div>{book.title}</div>
+				<div class="w-[30rem] bg-white p-3">
+					<div class="font-semibold">{book.title}</div>
+					<a href={book.buyurl} target="_blank">
+						<img
+							class="w-[6rem] mt-3 mr-3 float-left border border-gray-300"
+							src={`https://edwardtanguay.vercel.app/share/images/books/${book.idcode}.png`}
+						/>
+					</a>
+					<div>{book.description}</div>
 				</div>
 			);
 		})
