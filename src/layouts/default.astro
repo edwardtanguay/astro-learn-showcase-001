@@ -17,6 +17,8 @@ const navItems = [
 		label: "About",
 	},
 ];
+const pathname = new URL(Astro.request.url).pathname;
+const currentPath = pathname.slice(1);
 ---
 
 <html lang="en">
@@ -36,7 +38,7 @@ const navItems = [
 				{
 					navItems.map((navItem) => {
 						return (
-							<a href={navItem.path} class="hover:underline">
+							<a href={navItem.path} class={`hover:underline ${'/' + currentPath === navItem.path ? "active" : ""}`}>
 								{navItem.label}
 							</a>
 						);
@@ -74,9 +76,15 @@ const navItems = [
 	}
 
 	.hero-image {
-		background-image: url("../images/space.jpg"); 
+		background-image: url("../images/space.jpg");
 		background-size: cover;
 		background-position: center;
 		height: 90vh;
+	}
+
+	a.active {
+		color: rgb(6, 73, 6);
+		font-weight:bold;
+		text-shadow: 0 0 5px yellow;
 	}
 </style>
