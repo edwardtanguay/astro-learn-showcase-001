@@ -1,18 +1,18 @@
 ---
 const navItems = [
 	{
-		path: '/',
-		label: 'Welcome'
+		path: "/",
+		label: "Welcome",
 	},
 	{
-		path: '/info',
-		label: 'Info'
+		path: "/info",
+		label: "Info",
 	},
 	{
-		path: '/about',
-		label: 'About'
+		path: "/about",
+		label: "About",
 	},
-]
+];
 ---
 
 <html lang="en">
@@ -25,15 +25,23 @@ const navItems = [
 	</head>
 	<body class="bg-green-100">
 		<header class="flex gap-6 items-center bg-green-50 p-6">
-			<h1 class="text-3xl bg-green-400 p-3 rounded w-fit">Astro Showcase Site</h1>
+			<h1 class="text-3xl bg-green-400 p-3 rounded w-fit">
+				Astro Showcase Site
+			</h1>
 			<nav class="flex gap-3 text-xl">
-				{navItems.map((navItem) => {
-					return <a href={navItem.path} class="hover:underline">{navItem.label}</a>
-				})}
+				{
+					navItems.map((navItem) => {
+						return (
+							<a href={navItem.path} class="hover:underline">
+								{navItem.label}
+							</a>
+						);
+					})
+				}
 			</nav>
 		</header>
-		<section class="p-6">
-			<slot/>
+		<section>
+			<slot />
 		</section>
 	</body>
 </html>
@@ -41,7 +49,7 @@ const navItems = [
 <style is:global>
 	h2 {
 		font-size: 1.3rem;
-		margin-bottom: .5rem;
+		margin-bottom: 0.5rem;
 	}
 
 	h3 {
@@ -50,7 +58,7 @@ const navItems = [
 	}
 
 	h3:not(:first-of-type) {
-		margin-top: .5rem;
+		margin-top: 0.5rem;
 	}
 
 	ul {
@@ -59,6 +67,12 @@ const navItems = [
 	}
 
 	li {
+	}
 
+	.hero-image {
+		background-image: url("../images/space.jpg"); 
+		background-size: cover;
+		background-position: center;
+		height: 90vh;
 	}
 </style>

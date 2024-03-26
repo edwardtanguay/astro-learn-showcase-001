@@ -1,8 +1,14 @@
 ---
-import Layout from '../layouts/default.astro';
+import Layout from "../layouts/default.astro";
 ---
 
 <Layout>
-		<h2>Welcome Page</h2>
-		<p>This is the welcome page.</p>
-</Layout>	
+	<section class="hero-image p-6 flex justify-end">
+		<div class="flex justify-start h-fit flex-col">
+			<p class="text-[5vw] text-yellow-300 pr-6 text-center">Glad you're here!</p>
+			<p class="text-[3vw] text-center">
+				Check out our <a href="/info" class="underline">info</a>
+			</p>
+		</div>
+	</section>
+</Layout>
