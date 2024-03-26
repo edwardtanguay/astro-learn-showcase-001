@@ -4,4 +4,10 @@ export type Book = {
 	title: string;
 	description: string;
 	buyurl: string;
+	price: number;
 }
+
+export type CartStore = {
+	quantity: number;
+	item: Book;
+};
