@@ -1,5 +1,5 @@
 ---
-layout: ../layouts/default.astro
+layout: ../layouts/page.astro
 ---
 
 ## Info Page (created with Markdown)
