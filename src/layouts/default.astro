@@ -6,26 +6,16 @@
 		<meta name="generator" content={Astro.generator} />
 		<title>About</title>
 	</head>
-	<body>
-		<header>THIS IS THE HEADER</header>
-		<h2>H2 in layout</h2>
-		<p>paragraph in layout</p>
+	<body class="bg-green-100 p-6">
+		<header>
+			<h1 class="text-3xl bg-green-400 p-3 rounded w-fit mb-4">Astro Showcase Site</h1>
+		</header>
 		<slot/>
-		<footer>THIS IS THE FOOTER</footer>
 	</body>
 </html>
 
 <style is:global>
-	p {
-		color: green;
-	}
-	li {
-		color: orangered;
-	}
-</style>
-
-<style>
 	h2 {
-		color: purple;
+		font-size: 1.3rem;
 	}
 </style>
