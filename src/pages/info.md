@@ -2,13 +2,15 @@
 layout: ../layouts/default.astro
 ---
 
-# Info
+## Info Page (created with Markdown)
 
-- this is some info
-- now some more
+### First Section
 
-## sub issue
+-   this is some info
+-   now some more
 
-- a sub issue
-- more details
-- and more
+### Second Section
+
+-   a sub issue
+-   more details
+-   and more

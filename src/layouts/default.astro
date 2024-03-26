@@ -1,3 +1,21 @@
+---
+const navItems = [
+	{
+		path: '/',
+		label: 'Welcome'
+	},
+	{
+		path: '/about',
+		label: 'About'
+	},
+	{
+		path: '/info',
+		label: 'Info'
+	},
+
+]
+---
+
 <html lang="en">
 	<head>
 		<meta charset="utf-8" />
@@ -6,16 +24,42 @@
 		<meta name="generator" content={Astro.generator} />
 		<title>About</title>
 	</head>
-	<body class="bg-green-100 p-6">
-		<header>
-			<h1 class="text-3xl bg-green-400 p-3 rounded w-fit mb-4">Astro Showcase Site</h1>
+	<body class="bg-green-100">
+		<header class="flex gap-6 items-center bg-green-50 p-6">
+			<h1 class="text-3xl bg-green-400 p-3 rounded w-fit">Astro Showcase Site</h1>
+			<nav class="flex gap-3 text-xl">
+				{navItems.map((navItem) => {
+					return <a href={navItem.path}>{navItem.label}</a>
+				})}
+			</nav>
 		</header>
-		<slot/>
+		<section class="p-6">
+			<slot/>
+		</section>
 	</body>
 </html>
 
 <style is:global>
 	h2 {
 		font-size: 1.3rem;
+		margin-bottom: .5rem;
+	}
+
+	h3 {
+		font-size: 1.1rem;
+		color: brown;
+	}
+
+	h3:not(:first-of-type) {
+		margin-top: .5rem;
+	}
+
+	ul {
+		margin-left: 1.5rem;
+		list-style-type: disc;
+	}
+
+	li {
+
 	}
 </style>
