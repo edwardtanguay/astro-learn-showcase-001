@@ -5,14 +5,13 @@ const navItems = [
 		label: 'Welcome'
 	},
 	{
-		path: '/about',
-		label: 'About'
-	},
-	{
 		path: '/info',
 		label: 'Info'
 	},
-
+	{
+		path: '/about',
+		label: 'About'
+	},
 ]
 ---
 
@@ -29,7 +28,7 @@ const navItems = [
 			<h1 class="text-3xl bg-green-400 p-3 rounded w-fit">Astro Showcase Site</h1>
 			<nav class="flex gap-3 text-xl">
 				{navItems.map((navItem) => {
-					return <a href={navItem.path}>{navItem.label}</a>
+					return <a href={navItem.path} class="hover:underline">{navItem.label}</a>
 				})}
 			</nav>
 		</header>
