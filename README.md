@@ -1,4 +1,4 @@
-#  et401-astro-start-blank
+#  astro-learn-showcase-001
 
 This is a showcase site I am creating while I learn Astro in Jason Lengstorf's [course](https://frontendmasters.com/courses/astro/css-styles-navigation).
 
