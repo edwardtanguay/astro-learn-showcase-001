@@ -5,7 +5,7 @@ This is a showcase site I am creating while I learn Astro in Jason Lengstorf's [
 - repo: https://github.com/edwardtanguay/et401-astro-start-blank
 - live: https://et401-astro-start-blank.vercel.app
 
-![astro010](https://github.com/edwardtanguay/et401-astro-start-blank/assets/446574/db5590f4-1678-4771-9ab2-3d4e57def0dc)
+![astro111](https://github.com/edwardtanguay/et401-astro-start-blank/assets/446574/99a2537b-33ce-4829-8a07-89865b1fd49e)
 
 ## setup and start
 
