@@ -10,7 +10,7 @@ const blogPosts = await getCollection('blog');
 		{
 			blogPosts.map((post:any) => {
 				return (
-					<div class="post">
+					<div class="mb-6">
 						<h2>{post.data.title}</h2>
 						<time class="text-blue-800 italic" datetime={post.data.date.toISOString()}>
 							{post.data.date.toDateString()}

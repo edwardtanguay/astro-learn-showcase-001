@@ -31,7 +31,7 @@ const currentPath = pathname.slice(1);
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<meta name="viewport" content="width=device-width" />
 		<meta name="generator" content={Astro.generator} />
-		<title>About</title>
+		<title>Astro Showcase</title>
 	</head>
 	<body class="bg-green-100">
 		<header class="flex gap-6 items-center bg-green-50 p-6">
@@ -42,7 +42,10 @@ const currentPath = pathname.slice(1);
 				{
 					navItems.map((navItem) => {
 						return (
-							<a href={navItem.path} class={`hover:underline ${'/' + currentPath === navItem.path ? "active" : ""}`}>
+							<a
+								href={navItem.path}
+								class={`hover:underline ${"/" + currentPath === navItem.path ? "active" : ""}`}
+							>
 								{navItem.label}
 							</a>
 						);
@@ -88,7 +91,7 @@ const currentPath = pathname.slice(1);
 
 	a.active {
 		color: rgb(6, 73, 6);
-		font-weight:bold;
+		font-weight: bold;
 		text-shadow: 0 0 5px yellow;
 	}
 
